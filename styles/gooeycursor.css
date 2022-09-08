@@ -1,0 +1,42 @@
+:root {
+  --cursor-size: 35px;
+  --bg: #FAF7EE;
+}
+
+
+#cursor {
+  z-index: 40;
+  position: fixed;
+  top: calc(var(--cursor-size) * -0.5);
+  left: calc(var(--cursor-size) * -0.5);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  filter: url(#goo);
+}
+
+@-moz-document url-prefix() {
+  #cursor {
+    filter: none;
+  }
+}
+
+
+.cursor-circle {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: var(--cursor-size);
+  background: var(--bg);
+  transform-origin: center center;
+}
+
+body {
+  overflow-x: hidden;
+    cursor: none;
+}
+
+.goo {
+  display: none;
+}
