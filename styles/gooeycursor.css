@@ -32,10 +32,6 @@
   transform-origin: center center;
 }
 
-body {
-  overflow-x: hidden;
-    cursor: none;
-}
 
 .goo {
   display: none;
