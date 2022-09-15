@@ -46,7 +46,7 @@ export default function Layer({ openInk, openSidebar }) {
                 <div className='font-ciberthrone text-2xl ink-mode p-3 pt-0'>INK MODE</div>
             </div>
 
-            <div className={`lg:hidden fixed w-[35px] h-[25px] top-10 mx-auto left-0 right-0 flex justify-center flex-col space-y-1`}>
+            <div onClick={alert} className={`lg:hidden fixed w-[35px] h-[25px] top-10 mx-auto left-0 right-0 flex justify-center flex-col space-y-1`}>
                 <div className='bg-black h-[2px] w-1/2'></div>
                 <div className='bg-black h-[2px] w-full'></div>
                 <div className='bg-black h-[2px] w-1/2 self-end'></div>
