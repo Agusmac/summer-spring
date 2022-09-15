@@ -66,7 +66,7 @@ useEffect(() => {
                 </defs>
             </svg>
 
-            <div id="cursor" ></div>
+            <div id="cursor" className='will-change-transform' ></div>
         </>
     )
 }

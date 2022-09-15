@@ -28,9 +28,9 @@ export default function Double({ titleMoving, opacitier }) {
     return (
         <div className='flex justify-end mr-[10%] ml-[7%] md:ml-[15%] lg:ml-[23%]  gap-3 md:gap-14 relative'>
 
-            <div className={`duration-700 ease-out ${titleMoving ? 'opacity-0' : 'opacity-100'}`} style={{ transform: `translate3d(0px, ${titleMoving}%, 0px)` }}>
-                <div ref={ref} className={`border-[3px] border-black overflow-hidden `}>
-                    <Image priority src='/yellow-pants.jpg' className='pres3d duration-[2000ms] ease-out' style={{
+            <div className={`will-change-auto delay-300 duration-700 ease-out ${titleMoving ? 'opacity-0' : 'opacity-100'}`} style={{ transform: `translateY(${titleMoving}%)` }}>
+                <div ref={ref} className={`border-[3px] border-black overflow-hidden `}>                                  
+                    <Image priority={true} src='/yellow-pants.jpg' className='will-change-auto pres3d duration-[2000ms] ease-out' style={{
                         transform: `scale3d(${imgScaling}, ${imgScaling}, 1) `,
                     }} width={824} height={1166} quality={100} alt='yellow pants' />
                 </div>
@@ -40,9 +40,9 @@ export default function Double({ titleMoving, opacitier }) {
                 </div>
             </div>
 
-            <div className={`duration-700 ease-out ${titleMoving ? 'opacity-0' : 'opacity-100'}`} style={{ transform: `translate3d(0px, ${titleMoving}%, 0px)` }}>
+            <div className={`will-change-auto delay-[400ms] duration-700 ease-out ${titleMoving ? 'opacity-0' : 'opacity-100'}`} style={{ transform: `translateY(${titleMoving}%)` }}>
                 <div ref={ref2} className={`border-[3px] border-black overflow-hidden `}>
-                    <Image priority src='/red-pants.jpg' className='pres3d duration-[2000ms] ease-out' style={{
+                    <Image priority={true} src='/red-pants.jpg' className='will-change-auto pres3d duration-[2000ms] ease-out' style={{
                         transform: `scale3d(${imgScaling}, ${imgScaling}, 1)`,
                     }} width={824} height={1166} quality={100} alt='red pants' />
                 </div>
@@ -53,7 +53,7 @@ export default function Double({ titleMoving, opacitier }) {
             </div>
 
             <div className={`absolute inset-0 grid place-content-center mix-blend-multiply duration-1000 ${opacitier ? 'opacity-0' : 'opacity-100'} max-w-[20%] md:max-w-[30%] mx-auto`}>
-                <Image priority src='/double-tape.svg' alt='tape' width={269} height={269} />
+                <Image priority={true} src='/double-tape.svg' alt='tape' width={269} height={269} />
             </div>
         </div>
     )

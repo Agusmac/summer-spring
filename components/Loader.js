@@ -35,7 +35,7 @@ export default function Loader() {
 
 
   return (
-    <div id='Loader' className='fixed z-50 duration-1000 ease-in-out min-h-screen
+    <div id='Loader' className=' will-change-auto fixed z-50 duration-1000 ease-in-out min-h-screen
          bg-[#141414] inset-0 text-white mx-auto text-center py-8 flex flex-col justify-between'>
 
       <div className='w-[77px] h-[77px] mx-auto'>
@@ -43,7 +43,7 @@ export default function Loader() {
       </div>
 
       <div className='h-40 md:h-72 overflow-hidden'>
-        <div id='loadTitle' className='duration-[600ms] loaderTitleAnimation 
+        <div id='loadTitle' className='will-change-auto duration-[600ms] loaderTitleAnimation 
         text-[180px] leading-none md:text-[300px] text-[#fcf9ee] font-medium font-trailers'  style={{ transform: `translate3d(0px, ${translateNumber}%, 0px) ` }}>
           <p>30%</p>
           <p>68%</p>

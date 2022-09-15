@@ -12,13 +12,12 @@ export default function Layer({ openInk, openSidebar }) {
     }, [])
 
     return (
-        <div className='z-10 '>
-
+        <div className='z-10'>
             <div className={`hidden lg:inline-block fixed bottom-10 tracking-tight duration-700 ${openSidebar ? 'left-10' : '-left-32'}  space-y-1`}>
                 {temp.map((item, i) => (
                     <div key={i} className='overflow-hidden h-6'>
                         <div className='duration-700 ease-out skrrt-skrrt pr-4'>
-                            <h2 className=' '>{item}</h2>
+                            <h2 >{item}</h2>
                             <h2 className='rotate-[5deg]'>{item}</h2>
                         </div>
                     </div>))}
@@ -54,11 +53,11 @@ export default function Layer({ openInk, openSidebar }) {
             <div className='fixed top-10  right-10 lg:right-16 flex space-x-3 '>
                 <div className='overflow-hidden h-5'>
                     <div className='duration-700 ease-out skrrt-skrrt md:pr-4'>
-                        <h2 className=' '>CART</h2>
+                        <h2 >CART</h2>
                         <h2 className='rotate-[5deg]'>CART</h2>
                     </div>
                 </div>
-                <div className='font-bold '>0</div>
+                <div className='font-bold'>0</div>
             </div>
 
         </div>
