@@ -19,6 +19,7 @@ export default function Home() {
   // bg-slate-500 md:bg-[#db7f5a] lg:bg-[#fcf9ee]
   return (
     <>
+   
       <div className='bg-[#fcf9ee] min-h-screen overflow-x-hidden md:cursor-none'>
         <Hero setOpenInk={setOpenInk} />
         <YellowBand />

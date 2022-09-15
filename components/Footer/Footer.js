@@ -1,6 +1,10 @@
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer';
+import alert from '../Alert';
+
+
+
 
 import Rotator from '../Hero/Explore/Rotator'
 import SkrrtDiv from './SkrrtDiv'
@@ -29,7 +33,7 @@ export default function Footer({ setOpenSidebar }) {
                         <br />
                         <div className='w-[77px]'><Image src='/message.svg' height={49} width={77} alt={'envelope'} /></div>
                     </div>
-                    <div>
+                    <div onClick={alert}>
                         <p className='tracking-[-0.03em]'>SUBSCRIBE TO OUR NEWSLETTER</p>
                         <div className='flex justify-between items-end w-11/12 max-w-[560px] pb-5 pt-6 border-b border-[#141414]'>
                             <p className='text-3xl text-[#999] tracking-tighter ml-4 mb-3'>email address</p>
@@ -47,7 +51,7 @@ export default function Footer({ setOpenSidebar }) {
                         <div className='flex justify-center md:justify-start'>
                             <Rotator vertical />
                         </div>
-                        <div className='flex space-x-3 justify-center md:justify-start'>
+                        <div onClick={alert} className='flex space-x-3 justify-center md:justify-start'>
                             <Image alt={'facebook logo'} src='/facebook-logo.svg' height={36} width={36} />
                             <Image alt={'instagram logo'} src='/insta-logo.svg' height={36} width={36} />
                         </div>

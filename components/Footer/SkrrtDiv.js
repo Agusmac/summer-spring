@@ -1,11 +1,14 @@
 import React from 'react'
+import alert from '../Alert'
+
+
 
 export default function SkrrtDiv({title,t1,t2,t3,foot}) {
     return ( 
-        <div className='flex-1 tracking-tighter flex flex-col justify-between'>
+        <div  className='flex-1 tracking-tighter flex flex-col justify-between'>
             <div>
                 <p className=' md:text-xl mb-6'>{title}</p>
-                <div className='text-2xl md:text-4xl space-y-3'>
+                <div onClick={alert} className='text-2xl md:text-4xl space-y-3'>
 
                     <div className='overflow-hidden h-7 md:h-11'>
                         <div className='duration-[850ms] ease-out skrrt-skrrt space-y-4'>

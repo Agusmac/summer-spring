@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import alert from '../../Alert'
 
 export default function Rotator({ vertical }) {
 
@@ -7,7 +8,7 @@ export default function Rotator({ vertical }) {
 
     return (
         <div>
-            <div className={`relative flex max-w-[15vw] z-20  ${vertical ? 'rotate-[-90deg]' : ''}`} onMouseOver={() => setOnHover(1)} onMouseLeave={() => setOnHover(0)} >
+            <div onClick={alert} className={`relative flex max-w-[15vw] z-20  ${vertical ? 'rotate-[-90deg]' : ''}`} onMouseOver={() => setOnHover(1)} onMouseLeave={() => setOnHover(0)} >
                 <div className={`duration-500 ease-out ${onHover && 'scale-[1.2]'}`}>
                     <Image src='/circle.svg' width={100} height={100} alt={'circle'} />
                 </div>

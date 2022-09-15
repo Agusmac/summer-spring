@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { useEffect } from 'react';
+import alert from './Alert';
+
 
 export default function Layer({ openInk, openSidebar }) {
 
@@ -15,7 +17,7 @@ export default function Layer({ openInk, openSidebar }) {
         <div className='z-10'>
             <div className={`hidden lg:inline-block fixed bottom-10 tracking-tight duration-700 ${openSidebar ? 'left-10' : '-left-32'}  space-y-1`}>
                 {temp.map((item, i) => (
-                    <div key={i} className='overflow-hidden h-6'>
+                    <div key={i} onClick={alert} className='overflow-hidden h-6'>
                         <div className='duration-700 ease-out skrrt-skrrt pr-4'>
                             <h2 >{item}</h2>
                             <h2 className='rotate-[5deg]'>{item}</h2>
@@ -41,7 +43,7 @@ export default function Layer({ openInk, openSidebar }) {
             </div>
 
             <div className={`hidden lg:flex fixed ${openInk ? 'top-10' : '-top-10'} duration-700  mx-auto left-0 right-0  justify-center`}>
-                <div className='font-ciberthrone text-2xl ink-mode p-3 pt-0 '>INK MODE</div>
+                <div className='font-ciberthrone text-2xl ink-mode p-3 pt-0'>INK MODE</div>
             </div>
 
             <div className={`lg:hidden fixed w-[35px] h-[25px] top-10 mx-auto left-0 right-0 flex justify-center flex-col space-y-1`}>
@@ -50,7 +52,7 @@ export default function Layer({ openInk, openSidebar }) {
                 <div className='bg-black h-[2px] w-1/2 self-end'></div>
             </div>
 
-            <div className='fixed top-10  right-10 lg:right-16 flex space-x-3 '>
+            <div onClick={alert} className='fixed top-10  right-10 lg:right-16 flex space-x-3  '>
                 <div className='overflow-hidden h-5'>
                     <div className='duration-700 ease-out skrrt-skrrt md:pr-4'>
                         <h2>CART</h2>
