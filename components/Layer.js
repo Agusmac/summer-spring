@@ -53,7 +53,7 @@ export default function Layer({ openInk, openSidebar }) {
             <div className='fixed top-10  right-10 lg:right-16 flex space-x-3 '>
                 <div className='overflow-hidden h-5'>
                     <div className='duration-700 ease-out skrrt-skrrt md:pr-4'>
-                        <h2 >CART</h2>
+                        <h2>CART</h2>
                         <h2 className='rotate-[5deg]'>CART</h2>
                     </div>
                 </div>

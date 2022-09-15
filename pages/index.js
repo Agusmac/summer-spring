@@ -33,7 +33,6 @@ export default function Home() {
         <Layer openInk={openInk} openSidebar={openSidebar} />
       </div>
       <Loader />
-
     </>
   )
 }

@@ -4,8 +4,6 @@ import Image from 'next/image'
 export default function Loader() {
 
  
-
-
   const [translateNumber, setTranslateNumber] = useState(25)
 
   // const temp = [25, 50, 75]
