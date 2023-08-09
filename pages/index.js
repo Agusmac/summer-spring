@@ -11,6 +11,8 @@ import YellowBand from '../components/YellowBand'
 import Layer from '../components/Layer'
 import { useState } from 'react'
 
+
+
 export default function Home() {
 
   const [openInk, setOpenInk] = useState(true)
@@ -19,7 +21,10 @@ export default function Home() {
   // bg-slate-500 md:bg-[#db7f5a] lg:bg-[#fcf9ee]
   return (
     <>
-   
+           <Head>
+          <title>Canal-Street-Market | Agustin</title>
+          <meta name='description' content="This site was made by Agustin Mac Rae-Frontend Developer" />
+      </Head>
       <div className='bg-[#fcf9ee] min-h-screen overflow-x-hidden md:cursor-none'>
         <Hero setOpenInk={setOpenInk} />
         <YellowBand />

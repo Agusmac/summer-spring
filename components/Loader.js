@@ -51,7 +51,7 @@ export default function Loader() {
       </div>
 
       <div className='text-lg md:text-2xl leading-tight text-[#fcf9ee]'>
-        <h4>© 2020 DÉPLACÈ MAISON.</h4>
+        <h3>© 2020 DÉPLACÈ MAISON.</h3>
         <h4>ALL RIGHTS RESERVED.</h4>
       </div>
     </div>
